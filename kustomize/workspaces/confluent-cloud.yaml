@@ -1,0 +1,17 @@
+---
+apiVersion: infra.contrib.fluxcd.io/v1alpha1
+kind: Terraform
+metadata:
+  name: tf-controller-aws-testing
+  namespace: flux-system
+spec:
+  interval: 1h
+  path: ../../terraform/confluentcloud
+  approvePlan: "auto"
+  varsFrom:
+    - kind: Secret
+      name: confluent-vars
+  sourceRef:
+    kind: GitRepository
+    name: flux-system
+    namespace: flux-system
