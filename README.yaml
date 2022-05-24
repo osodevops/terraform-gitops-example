@@ -25,7 +25,6 @@ examples: |-
   * Run `kubectl apply -f gotk-components.yaml`
 
 
-
 related:
   - name: "Kafka GitOps Example"
     description: "A Kafka / Confluent GitOps workflow example for multi-env deployments with Flux, Kustomize, Helm and Confluent Operator"
