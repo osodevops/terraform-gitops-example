@@ -1,0 +1,35 @@
+---
+#
+# This is the canonical configuration for the `README.md`
+# Run `make readme` to rebuild the `README.md`
+#
+
+# Name of this project
+name: "Terraform GitOps Example"
+
+# Short description of this project
+description: |-
+  Fully automate Terraform using GitOps pushed based commits with TF-Controller, Kustomize and the GitOps toolkit
+
+# Canonical GitHub repo
+github_repo: osodevops/terraform-gitops-example
+
+# How to use this project
+usage: |-
+  
+
+# Example usage
+examples: |-
+  ### Deployment Process
+  * Navigate to `./flux-system`
+  * Run `kubectl apply -f gotk-components.yaml`
+
+
+
+related:
+  - name: "Kafka GitOps Example"
+    description: "A Kafka / Confluent GitOps workflow example for multi-env deployments with Flux, Kustomize, Helm and Confluent Operator"
+    url: "https://github.com/osodevops/kafka-gitops-examples"
+  - name: "Confluent GitOps Demo"
+    description: "Fully automated Confluent platform deployment on Kubernetes using Flux, Kustomize and Terraform Controller"
+    url: "https://github.com/osodevops/confluent-gitops-demo"
